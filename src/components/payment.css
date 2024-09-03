@@ -1,0 +1,160 @@
+.payment-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.payment-container h2{
+  display: flex;
+  flex-direction: column;
+  font-size: 60px;
+  line-height: 1.2;
+  color: var(--tp-heading-primary);
+  
+}
+.top-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.payment-container p{
+  color: var(--tp-text-body);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.payment-types{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  gap: 20px;
+}
+
+.scan-go  {
+  background: linear-gradient(142.23deg, #FFF7F1 7.63%, #FAE9EF 99.01%), linear-gradient(142.23deg, #FFF7F1 7.63%, #FAE9EF 99.01%);
+  border-radius: 40px;
+  height: 440px;
+  width: 550px;
+  padding: 40px;
+  overflow: hidden;
+  position: relative;
+}
+.scan-go h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: var(--tp-ff-mont);
+  padding-bottom: 15px;
+ 
+}
+
+.scan-go p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 90px;
+  color: var(--tp-text-body);
+  padding: 0px 0px 90px;
+}
+.mobilephone{
+  position: absolute;
+  bottom: -20px;
+  background-color: red;
+  right: 20px;
+  height: 200px;
+  width: 200px;
+
+}
+.mobilephone img{
+  object-fit: contain;
+  object-position: bottom;
+  height:100%;
+  width: 100%;
+  left: 20px;
+  
+ 
+}
+.email-link{
+  background: linear-gradient(142.23deg, #F3F8FF 7.63%, #CEDBFF 99.01%);
+  border-radius: 40px;
+  height: 440px;
+  width: 550px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.email-link h2{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: var(--tp-ff-mont);
+  padding-bottom: 15px;
+  
+}
+
+.email-link p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 90px;
+  color: var(--tp-text-body);
+  
+  
+}
+.email-images{
+  position: absolute;
+  bottom: -150px;
+  right: 0px;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.message , .payment3 {
+width: 300px;
+height: 300px;
+object-fit: contain;
+
+}
+
+.message{
+  object-position: right;
+  transform: translateX(130px) ;
+  z-index: 3;
+  
+}
+.payment3{
+  object-position: left;
+  z-index: 2;
+  transform: translateX(-50px) ;
+  
+
+}
+
+.online-billing h2{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  font-family: var(--tp-ff-mont);
+  padding-bottom: 15px;
+ 
+}
+
+.online-billing p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--tp-text-body);
+  
+}
+

@@ -2,20 +2,26 @@
   color: white;
   background-color: var(--tp-common-blue-2);
   height: 100vh;
-  min-height: 700px;
+  min-height: 850px;
   width: 100%;
   background-image: url('/public/images/hero-bg.png'); 
   background-size: cover;
   background-position: center;
-  display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 12%;
   padding-left: 60px;
   overflow: hidden;
   
-  
 }
+
+.hero-content{
+  position: relative;
+}
+
+.hero-main{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
 
 .hero-content span{
   font-family: "Montserrat Alternates", system-ui;
@@ -71,7 +77,60 @@ gap: 10px;
   left: -3px;
 }
 .hero-image{
-  
+height: 100%;
+max-width: 600px;
+position: relative;
+z-index: 1;
+
  
 }
+.hero-image .phone{
+  object-fit: contain;
+  object-position: bottom;
+  max-width: 600px;
+  height: 100%;
+width: 100%;
+   
+  }
 
+  .card, .spotify, .total {
+    position: absolute;
+    object-fit: contain;
+    object-position: bottom;
+    overflow: hidden;
+    
+    border-radius: 20px;
+    height: auto;
+  }
+
+  
+  .card{
+    z-index: 4;
+  left: 35%;
+  top: 25%;
+  backdrop-filter: blur(12px);
+  }
+
+  .spotify{
+    z-index: 4;
+  left: 29%;
+  top: 47%;
+  height: 124px;
+  width: 329px;
+  object-fit: cover;
+  }
+
+  .total{
+    z-index: -1;
+  left: -15%;
+  backdrop-filter: blur(12px);
+  bottom: 20%;
+
+  }
+
+  .arrow{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+  
