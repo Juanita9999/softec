@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Hero from './components/hero';
 import Payment from './components/payment';
+import Service from './components/service';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       </header>
       <Hero/>
       <Payment/>
+      <Service/>
     </div>
   );
 }
