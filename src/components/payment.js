@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './payment.css';
 
-const OnlineBilling = ({ title, description, exploreText, images }) => {
+const OnlineBilling = ({ title, description, exploreText, images , myClass }) => {
   return (
-    <div className='online-billing'>
+    <div className={`online-billing ${myClass} `}>
       <div className='billing-left'>
         <h2 className='billing-title'>{title}</h2>
         <p className='billing-description'>{description}</p>
@@ -23,6 +23,7 @@ const Payment = () => {
   const billingData = [
     {
       title: "Online Billing & Invoicing Payments.",
+      myClass: 'online',
       description: "Get paid faster with Online Invoicing and the Virtual Terminal.",
       exploreText: "Explore Invoicing Tools",
       images: [
@@ -32,6 +33,7 @@ const Payment = () => {
     },
     {
       title: "Recurring Payments & Subscriptions",
+      myClass: 'recurring',
       description: "Automate your payments with recurring invoices and subscription plans.",
       exploreText: "Learn More",
       images: [
@@ -41,6 +43,7 @@ const Payment = () => {
     },
     {
       title: "Customizable Invoices",
+      myClass: 'customizable',
       description: "Create and send professional invoices with customizable templates.",
       exploreText: "Customize Your Invoice",
       images: [
@@ -92,11 +95,12 @@ const Payment = () => {
           }
 
           return (
-            <div key={index} className={`slide ${slideClass} container` }>
+            <div key={index} className={`slide ${slideClass} container `}>
               <OnlineBilling
                 title={item.title}
                 description={item.description}
                 exploreText={item.exploreText}
+                myClass={item.myClass}
                 images={item.images}
               />
             </div>
@@ -107,4 +111,4 @@ const Payment = () => {
   );
 };
 
-export default Payment;
+export default Payment;
