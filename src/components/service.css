@@ -3,8 +3,7 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  height: 650px;
-  padding-top: 200px;
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
   width: 100%;
