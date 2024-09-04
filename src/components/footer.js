@@ -3,7 +3,8 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <div className="footer-section container">
+    <div className="footer ">
+      <div className="footer-section container">
       <div className="footer-items">
        <img src="images/softeclogo.png" alt="softeclogo"/>
        <p>1811 Silverside Rd, Wilmington, DE 19810, USA</p>
@@ -49,6 +50,8 @@ const Footer = () => {
       </div>
 
       </div>
+      </div>
+     
 </div>
 
   )}

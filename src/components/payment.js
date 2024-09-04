@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './payment.css';
+import './payment.responsive.css';
 
 const OnlineBilling = ({ title, description, exploreText, images , myClass }) => {
   return (
-    <div className={`online-billing ${myClass} `}>
+    <div className={`online-billing ${myClass}  `}>
       <div className='billing-left'>
         <h2 className='billing-title'>{title}</h2>
         <p className='billing-description'>{description}</p>
@@ -88,11 +89,9 @@ const Payment = () => {
           let slideClass = '' ;
           if (index === currentSlide) {
             slideClass = 'active';
-          } else if (index === (currentSlide + 1) % billingData.length) {
-            slideClass = 'next';
-          } else if (index === (currentSlide - 1 + billingData.length) % billingData.length) {
-            slideClass = 'previous';
-          }
+          } else {
+            slideClass = 'inactive';
+          } 
 
           return (
             <div key={index} className={`slide ${slideClass} container `}>
@@ -111,4 +110,4 @@ const Payment = () => {
   );
 };
 
-export default Payment;
+export default Payment;

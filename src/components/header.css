@@ -1,64 +1,170 @@
 .header-section{
-position: absolute;
-left: 0;
-right: 0;
-top: 0;
-}
-
-.header-items{
-  color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 60px;
-}
-
-.nav-links{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 14px;
-  transition: all 0.3s;
-  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  }
   
-}
-.nav-links li:hover{
-  color: #61CE70;
-  text-decoration: underline; 
-  text-underline-offset: 6px;           
+  .header-items{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+  }
   
-}
-
-.header-right{
-  display: flex;
-  flex-direction: row;
+  .nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    transition: all 0.3s;
+    cursor: pointer;
+    
+  }
+  .nav-links li:hover,.sidebar-links li:hover {
+    color: #61CE70;
+    text-decoration: underline; 
+    text-underline-offset: 6px;           
+    
+  }
+  
+  .header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .header-right h4{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 12px;
+  }
+  .header-right button{
+    color: var(--tp-common-white);
+      font-family: var(--tp-ff-mont);
+      height: 40px;
+      padding: 0 30px;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      overflow: hidden;
+      display: inline-block;
+      z-index: 1;
+      transition: 0.5s;
+      background: linear-gradient(180deg, var(--tp-common-gra-1) -23%, var(--tp-common-gra-2) 100%);
+      box-shadow: 0px 2px 3px rgba(3, 22, 3, 0.2);
+      border-radius: 10px;
+  }
+  
+  .menu-hamburger{
+    background-color: white;
+  color: black;
+  border-radius: 999px;
+  width: 46px;
+  height: 46px;
+  display: none;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-}
-.header-right h4{
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 12px;
-}
-.header-right button{
-  color: var(--tp-common-white);
-    font-family: var(--tp-ff-mont);
-    height: 40px;
-    padding: 0 30px;
-    font-weight: 600;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    overflow: hidden;
-    display: inline-block;
-    z-index: 1;
-    transition: 0.5s;
-    background: linear-gradient(180deg, var(--tp-common-gra-1) -23%, var(--tp-common-gra-2) 100%);
-    box-shadow: 0px 2px 3px rgba(3, 22, 3, 0.2);
-    border-radius: 10px;
-}
+  
+  }
+  
+  /* Sidebar Styles */
+  .side-menu {
+  
+   background-color: var(--tp-common-black);
+   color: white;
+   position: fixed;
+   z-index: 99;
+   width: 50%;
+   height:100%;
+   top: 0;
+   
+   right:0;
+   transition: all 0.4s ease-in-out;
+   transition-duration: 0.8s;
+   transform: translateX(100%);
+   
+  }
+  
+  .sidebar{
+    padding: 80px 40px ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+  .menu-close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  /* Open Menu Class */
+  .openMenu {
+    transform: translateX(0%);
+   
+    
+  }
+  .sidebar-links{
+    list-style: none;
+    display: flex;
+    row-gap: 20px;
+    font-size: 24px;
+    font-weight: 600px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .sidebar .header-right{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    align-items: center;
+  }
+  
+  @media (max-width: 1000px) {
+    .nav-links{
+      list-style: none;
+      display: none;
+    }
+  
+    .menu-hamburger{
+    display: flex;
+    
+    }
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+   
+    .side-menu {
+      width: 80%;
+  
+     }
+  
+     .header-right button, .header-right h4{
+      display: none;
+     }
+  
+     .sidebar .header-right button,.sidebar  .header-right h4{
+      display: inline-block;
+     }
+  
+     .header  .container {
+      width:100%;
+      margin: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+  
+  }

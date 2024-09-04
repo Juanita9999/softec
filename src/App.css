@@ -23,3 +23,9 @@ h4 {
 body{
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
+@media (max-width: 1380px) {
+  h1 {
+    font-size: 80px;
+}
+}

@@ -1,9 +1,10 @@
 import React from "react";
 import './service.css';
+import './service.responsive.css'
 
 const Service = () => {
   return (
-    <section>
+    <section className="service-bg">
     <div className="service-container container">
       <div className="service-text">
         <h2>We provide the best service for you</h2>
@@ -45,7 +46,8 @@ const Service = () => {
     
 
    </div>
-   <div className="free-tools container">
+   <div className="container">
+   <div className="free-tools ">
       <div className="tools" >
         <h3>more free tools than you can handle</h3>
         </div>
@@ -66,6 +68,8 @@ const Service = () => {
   
         </ul>
     </div>
+   </div>
+  
     </section>
   
   )}

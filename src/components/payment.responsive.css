@@ -1,0 +1,175 @@
+/* Small Laptop */
+@media (max-width: 1200px) {
+  .container {
+   width:960px;
+   margin: auto;
+   padding-left: 0;
+   padding-right: 0;
+  }
+  .payment-container h2{
+
+      font-size:44px;
+      line-height: 0.8;
+      margin-bottom: 20px;
+      padding-top: 20px;
+
+    }
+
+    .scan-go,.email-link{
+      padding: 55px 70px;
+    }
+    .scan-go h2,.email-link h2{
+      line-height: 40px;
+      font-size:30px;
+    }
+ 
+}
+
+
+/* Tablet Styles */
+@media (max-width: 1000px) {
+  .container {
+      width:700px;
+      margin: auto;
+      padding-left: 0;
+      padding-right: 0;
+     }
+     .payment-container h2{
+
+      font-size:40px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      padding-top: 20px;
+
+    }
+    .scan-go h2,.email-link h2{
+      line-height: 26px;
+      font-size:20px;
+    }
+    .scan-go,.email-link{
+      padding: 35px;
+    }
+
+    .mobilephone{
+      bottom: -30px;
+      right: 40px;
+      height: 270px;
+      width: 200px;
+    
+    }
+    .email-images{
+      position: absolute;
+      bottom: -160px;
+    
+
+    }
+    
+    .message , .payment3 {
+    width: 250px;
+    max-width: 250px;
+    height: 250px;
+  
+    
+    }
+    
+    .message{
+      object-position: left;
+      transform: translateX(80%) ;
+      z-index: 3;  
+    
+    }
+    .payment3{
+      
+      object-position: right;
+      z-index: 2;
+    
+    }
+    .online-billing {
+      padding: 35px;
+      border-radius: 30px;
+
+
+    }
+    .billing-title{
+      font-size: 20px;
+      line-height: 26px;
+      padding-bottom: 10px;
+      width: 300px;
+    }
+    .billing-description{
+      width: 300px;
+    }
+
+    .billing-images {
+      right: 10px;
+      align-items: end;
+    
+    }
+    .online .billing-images img:first-child {
+      max-width:200px;
+      height: 210px;
+      object-position: bottom;
+    }
+   .online .billing-images img{
+   height: 320px;
+      max-width:300px;
+      
+    }
+   
+    
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    width:100%;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+     }
+
+.top-title{
+  padding-bottom: 0px;
+}
+.payment-container h2{
+  text-align: center;
+}
+.payment-container p{
+  font-size: 14px;
+  text-align: center;
+}
+.payment-types{
+  display: flex;
+  flex-direction: column;
+  gap:24px;
+}
+.billing-slider, .online-billing {
+ 
+  height: 600px;
+ 
+}
+.billing-title, .billing-left h2{
+  font-size: 24px;
+  width:100%;
+
+}
+.billing-description{
+  padding: 0px 0px 25px;
+  width:100%;
+}
+.scan-go,.email-link{
+  padding: 25px 10px;
+}
+    
+.online-billing{
+  padding: 25px;
+}
+.online .billing-images img:first-child, .recurring .billing-images img:first-child {
+ display: none;
+}
+.billing-images img{
+height: 320px;
+  max-width:300px;
+}
+
+}

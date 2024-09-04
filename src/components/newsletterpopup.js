@@ -10,7 +10,7 @@ const NewsletterPopup = () => {
             setShowPopup(true);
         }, 2000);
 
-        return () => clearTimeout(timer); // Clean up the timer on component unmount
+        return () => clearTimeout(timer); 
     }, []);
 
     const closePopup = () => {

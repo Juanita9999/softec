@@ -3,11 +3,12 @@
   background-color: var(--tp-common-blue-2);
   height: 100vh;
   min-height: 850px;
+  max-height:950px;
   width: 100%;
   background-image: url('/public/images/hero-bg.png'); 
   background-size: cover;
   background-position: center;
-  padding-top: 12%;
+  padding-top: 200px;
   padding-left: 60px;
   overflow: hidden;
   
@@ -15,11 +16,15 @@
 
 .hero-content{
   position: relative;
+  overflow: hidden;
+ 
 }
 
 .hero-main{
   display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
+  height: 100%;
+  overflow: hidden;
 }
 
 
@@ -32,6 +37,7 @@
  
 }
 .hero-content h1{
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
@@ -70,11 +76,13 @@ gap: 10px;
   font-size: 18px;
   color: white;
  padding: 80px;
+ 
 }
 .curved-line{
   position: absolute;
   bottom: -18px;
   left: -3px;
+  
 }
 .hero-image{
 height: 100%;
@@ -84,12 +92,16 @@ z-index: 1;
 
  
 }
+
+
 .hero-image .phone{
   object-fit: contain;
   object-position: bottom;
-  max-width: 600px;
+max-width: 770px;
   height: 100%;
-width: 100%;
+
+  
+
    
   }
 
@@ -132,5 +144,4 @@ width: 100%;
     top: 50%;
     left: 50%;
     position: absolute;
-  }
-  
+}
